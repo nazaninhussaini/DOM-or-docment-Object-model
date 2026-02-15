@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Modeal</title>
+</head>
+<body>
+    <div>
+    <button id="one">افزایش دهنده</button>
+    <h1>0</h1>
+    <button id="tow">کاهش دهنده</button>
+    </div>
+    <script>
+        const btn1 = document.getElementById("one");
+        const btn2 = document.getElementById("tow");
+        const h1 = document.querySelector("h1");
+        //div.append(btn1,btn2,h1);
+        let numbers = 0;
+        function increment (){
+            numbers ++;
+            h1.textContent = numbers
+        }
+           function decrement (){
+            numbers --;
+            h1.textContent = numbers
+        }
+        btn1.addEventListener("click",increment);
+        btn2.addEventListener("click",decrement);
+    </script>
+</body>
+</html>
