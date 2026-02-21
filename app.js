@@ -15,3 +15,4 @@ function chenger(){
     }
     image.setAttribute("src",UrlList[counter])
 }
+
